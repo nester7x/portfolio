@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<div class="wrapper">
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/logo.png" alt="logo">
+        </a>
+
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Home</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#product">Product</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#pricing">Pricing</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__buttons">
+          <button class="header__btn header__btn--search"></button>
+
+          <button class="header__btn header__btn--basket"></button>
+
+          <button class="menu__btn">
+            <span></span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="section about">
+      <div class="container">
+        <div class="about__inner">
+
+          <h1 class="title about__title">EMPOWER
+            YOUR BUSINESS
+          </h1>
+
+          <p class="about__subtitle">
+            We know how large
+            objects will act, but things
+            on a small scale just do
+            not act that way.
+          </p>
+
+          <div class="about__buttons">
+            <button class="btn about__btn">Get Quote Now</button>
+            <button class="btn about__btn">Learn More</button>
+          </div>
+
+          <div class="info--hover about__info">
+            <a class="info_item--hover about__info_item" href="#">
+              <svg width="48" height="41" viewBox="0 0 48 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                  <path d="M42.5886 8.52529H37.519V3.45567C37.519 2.55931 37.1629 1.69966 36.5291 1.06583C35.8953 0.432007 35.0356 0.0759277 34.1393 0.0759277H13.8608C12.9644 0.0759277 12.1048 0.432007 11.4709 1.06583C10.8371 1.69966 10.481 2.55931 10.481 3.45567V8.52529H5.41142C4.06687 8.52529 2.77739 9.05941 1.82665 10.0102C0.875916 10.9609 0.341797 12.2504 0.341797 13.5949V37.2531C0.341797 38.1495 0.697876 39.0092 1.3317 39.643C1.96553 40.2768 2.82518 40.6329 3.72154 40.6329H44.2785C45.1749 40.6329 46.0345 40.2768 46.6683 39.643C47.3022 39.0092 47.6582 38.1495 47.6582 37.2531V13.5949C47.6582 12.2504 47.1241 10.9609 46.1734 10.0102C45.2227 9.05941 43.9332 8.52529 42.5886 8.52529ZM13.8608 3.45567H34.1393V8.52529H13.8608V3.45567ZM44.2785 37.2531H3.72154V22.0443H17.2405V30.4936H30.7595V22.0443H44.2785V37.2531ZM20.6203 22.0443H27.3798V27.1139H20.6203V22.0443ZM3.72154 18.6645V13.5949C3.72154 13.1467 3.89958 12.7169 4.2165 12.4C4.53341 12.0831 4.96323 11.905 5.41142 11.905H42.5886C43.0368 11.905 43.4666 12.0831 43.7836 12.4C44.1005 12.7169 44.2785 13.1467 44.2785 13.5949V18.6645H3.72154Z" fill="#00A0C1"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect width="48" height="40.7089" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <h4 class="info_title about__info_title">Business Growing</h4>
+
+              <p class="about__info_text">
+                We focus on ergonomics and
+                meeting you where you work.
+              </p>
+            </a>
+
+            <a class="info_item--hover about__info_item" href="#">
+              <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                  <g clip-path="url(#clip1)">
+                    <path opacity="0.15" d="M43.65 13.7502H4.35007C4.33207 13.7502 4.32007 13.7621 4.32007 13.7799V19.1851C4.32007 22.7294 7.26007 25.6039 10.8781 25.6039C13.3201 25.6039 15.4501 24.3 16.5841 22.3619C16.7581 22.0597 17.0881 21.87 17.4421 21.87C17.7961 21.87 18.1201 22.0597 18.3001 22.3619C19.4281 24.3 21.5581 25.6039 24.0001 25.6039C26.4481 25.6039 28.584 24.2941 29.706 22.3501C29.88 22.0537 30.198 21.87 30.54 21.87H30.576C30.924 21.87 31.236 22.0537 31.41 22.3501C32.538 24.2941 34.674 25.6039 37.122 25.6039C40.74 25.6039 43.68 22.7294 43.68 19.1851V13.7799C43.68 13.7621 43.668 13.7502 43.65 13.7502Z" fill="#00A0C1"/>
+                    <path d="M46.2 9.48885V1.89659C46.2 0.847537 45.342 0 44.28 0H3.72003C2.65804 0 1.80004 0.847537 1.80004 1.89659V9.48885C0.798037 9.54812 3.71756e-05 10.372 3.71756e-05 11.3795V19.1851C-0.00380525 20.6197 0.290253 22.0398 0.864037 23.3576C1.12204 23.9622 1.44004 24.5311 1.80004 25.0705V45.518C1.80004 46.5612 2.65804 47.4146 3.72003 47.4146H44.28C45.342 47.4146 46.2 46.5671 46.2 45.518V25.0705C46.5657 24.5298 46.879 23.9563 47.136 23.3576C47.706 22.036 48 20.6313 48 19.1851V11.3795C48 10.372 47.202 9.54812 46.2 9.48885ZM6.12003 4.26732H41.88V9.48293H6.12003V4.26732ZM27.84 43.1532H20.16V36.9834H27.84V43.1532ZM41.904 43.1532H31.68V35.0868C31.68 34.0378 30.822 33.1902 29.76 33.1902H18.24C17.178 33.1902 16.32 34.0378 16.32 35.0868V43.1532H6.12003V28.7985C6.29403 28.8814 6.47403 28.9644 6.66003 29.0355C7.99803 29.5927 9.42003 29.8712 10.884 29.8712C12.348 29.8712 13.764 29.5927 15.108 29.0355C15.936 28.6918 16.716 28.2532 17.43 27.7257C17.442 27.7198 17.454 27.7198 17.466 27.7257C18.1822 28.2554 18.9622 28.6954 19.788 29.0355C21.126 29.5927 22.548 29.8712 24.012 29.8712C25.476 29.8712 26.892 29.5927 28.236 29.0355C29.064 28.6918 29.844 28.2532 30.558 27.7257C30.57 27.7198 30.582 27.7198 30.594 27.7257C31.3102 28.2554 32.0902 28.6954 32.916 29.0355C34.254 29.5927 35.676 29.8712 37.14 29.8712C38.604 29.8712 40.02 29.5927 41.364 29.0355C41.544 28.9585 41.724 28.8814 41.904 28.7985V43.1532ZM43.68 19.1851C43.68 22.7294 40.74 25.6039 37.122 25.6039C34.674 25.6039 32.538 24.2941 31.41 22.3501C31.236 22.0537 30.924 21.87 30.576 21.87H30.54C30.198 21.87 29.88 22.0537 29.706 22.3501C29.1304 23.3417 28.2992 24.1652 27.297 24.7367C26.2948 25.3082 25.1572 25.6074 24 25.6039C21.558 25.6039 19.428 24.3 18.3 22.3619C18.12 22.0597 17.796 21.87 17.442 21.87C17.088 21.87 16.758 22.0597 16.584 22.3619C16.005 23.3498 15.1728 24.1695 14.1711 24.7387C13.1694 25.3078 12.0336 25.6062 10.878 25.6039C7.26003 25.6039 4.32003 22.7294 4.32003 19.1851V13.7799C4.32003 13.7621 4.33203 13.7502 4.35003 13.7502H43.65C43.668 13.7502 43.68 13.7621 43.68 13.7799V19.1851Z" fill="#00A0C1"/>
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect width="48" height="48" fill="white" transform="translate(0.5)"/>
+                  </clipPath>
+                  <clipPath id="clip1">
+                    <rect width="48" height="47.4146" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <h4 class="info_title about__info_title">Web Development</h4>
+
+              <p class="about__info_text">
+                Just type what's on your mind
+                and we'll get you there.
+              </p>
+            </a>
+
+            <a class="info_item--hover about__info_item" href="#">
+              <svg width="48" height="38" viewBox="0 0 48 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                  <path d="M29.142 8.62415H41.1398V12.0695H29.142V8.62415Z" fill="#00A0C1"/>
+                  <path d="M29.142 17.2375H41.1398V20.6828H29.142V17.2375Z" fill="#00A0C1"/>
+                  <path d="M29.142 25.8506H41.1398V29.296H29.142V25.8506Z" fill="#00A0C1"/>
+                  <path d="M44.5679 0.0111084H3.43235C2.52348 0.0120205 1.65209 0.375302 1.00942 1.02123C0.366752 1.66715 0.00530204 2.54295 0.00439453 3.45643V34.4643C0.00530204 35.3778 0.366752 36.2536 1.00942 36.8995C1.65209 37.5454 2.52348 37.9087 3.43235 37.9096H44.5679C45.4766 37.9082 46.3477 37.5448 46.9903 36.899C47.6329 36.2532 47.9945 35.3776 47.9958 34.4643V3.45643C47.9949 2.54295 47.6335 1.66715 46.9908 1.02123C46.3481 0.375302 45.4767 0.0120205 44.5679 0.0111084ZM3.43235 3.45643H22.2861V34.4643H3.43235V3.45643ZM25.7141 34.4643V3.45643H44.5679L44.5713 34.4643H25.7141Z" fill="#00A0C1"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect width="48" height="37.92" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <h4 class="info_title about__info_title">Business Growing</h4>
+
+              <p class="about__info_text">
+                the quick fox jumps over the
+                lazy dog
+              </p>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section advantages" id="product">
+      <div class="container">
+        <div class="advantages__inner">
+
+          <h2 class="title advantages__title">WHY CHOOSE US</h2>
+
+          <p class="subtitle advantages__subtitle">
+            Problems trying to resolve the conflict between the two major realms
+            of Classical physics: Newtonian mechanics
+          </p>
+
+          <div class="info advantages__info">
+            <div class="info_item advantages__info_item">
+              <img class="info_img" src="images/community.svg" alt="community" width="49" height="48">
+
+              <h4 class="title advantages__info_title">3K</h4>
+
+              <p class="advantages__info_text">
+                COUNTRIES
+                WORLDWIDE
+              </p>
+            </div>
+
+            <div class="info_item advantages__info_item">
+              <img class="info_img" src="images/stats.svg" alt="stats" width="49" height="48">
+
+              <h4 class="title advantages__info_title">45</h4>
+
+              <p class="advantages__info_text">
+                HAPPY CUSTOMERS
+              </p>
+            </div>
+
+            <div class="info_item advantages__info_item">
+              <img class="info_img" src="images/award.svg" alt="award" width="49" height="48">
+
+              <h4 class="title advantages__info_title">12+</h4>
+
+              <p class="advantages__info_text">
+                AWARD WINNING
+              </p>
+            </div>
+
+            <div class="info_item advantages__info_item">
+              <img class="info_img" src="images/tool_box.svg" alt="tool box" width="49" height="48">
+
+              <h4 class="title advantages__info_title">1.5K</h4>
+
+              <p class="advantages__info_text">
+                CASES DONE
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section advice" id="pricing">
+      <div class="container">
+        <div class="advice__inner">
+
+          <h2 class="title advice__title">Practice Advice</h2>
+
+          <p class="subtitle advice__subtitle">
+            Problems trying to resolve the conflict between
+            the two major realms of Classical physics: Newtonian mechanics
+          </p>
+
+          <div class="info advice__info">
+            <div class="info_item advice__info_item">
+              <h4 class="info_title advice__info_title">A single source
+                of truth
+              </h4>
+
+              <p class="advice__info_text">
+                Newton thought that
+                light was made up of
+                particles, but then it
+                was discovered
+              </p>
+
+              <img class="info_img advice__info_img" src="images/advice-1.jpg" alt="advice">
+            </div>
+
+            <div class="info_item advice__info_item">
+              <h4 class="info_title advice__info_title">
+                Fastest way to
+                take action
+              </h4>
+
+              <p class="advice__info_text">
+                Newton thought that
+                light was made up of
+                particles, but then it
+                was discovered
+              </p>
+
+              <img class="info_img advice__info_img" src="images/advice-2.jpg" alt="advice">
+            </div>
+
+            <div class="info_item advice__info_item">
+              <h4 class="info_title advice__info_title">
+                Fastest way to
+                take action
+              </h4>
+
+              <p class="advice__info_text">
+                Newton thought that
+                light was made up of
+                particles, but then it
+                was discovered
+              </p>
+
+              <img class="info_img advice__info_img" src="images/advice-3.jpg" alt="advice">
+            </div>
+
+            <div class="info_item advice__info_item">
+              <h4 class="info_title advice__info_title">
+                Work better
+                together
+              </h4>
+
+              <p class="advice__info_text">
+                Newton thought that
+                light was made up of
+                particles, but then it
+                was discovered
+              </p>
+
+              <img class="info_img advice__info_img" src="images/advice-4.jpg" alt="advice">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section services">
+      <div class="container">
+        <div class="services__inner">
+
+          <h2 class="title services__title">
+            We are providing best
+            business service.
+          </h2>
+
+          <p class="subtitle services__subtitle">
+            Problems trying to resolve the conflict between the two major realms
+            of Classical physics: Newtonian mechanics
+          </p>
+
+          <div class="services__content">
+            <div class="services__video">
+              <a class="services__video-link" href="https://www.youtube.com/watch?v=AlxlaTNnXVs" target="_blank">
+                <img class="services__img" src="images/play.svg" alt="play">
+              </a>
+            </div>
+
+            <div class="services__content_item">
+              <h3 class="title services__content_title">
+                Most trusted in
+                our field
+              </h3>
+
+              <p class="services__content_text">
+                Most calendars are designed for teams. Slate
+                is designed for freelancers who want a
+                simple way to plan their schedule.
+              </p>
+
+              <div class="services__info">
+                <div class="services__info_item">
+                  <h5 class="info_title services__info_title services__info_title--community">
+                    the quick fox jumps over the lazy
+                    dog
+                  </h5>
+                  <p class="services__info_text">
+                    Things on a very small scale ...
+                  </p>
+                </div>
+
+                <div class="services__info_item">
+                  <h5 class="info_title services__info_title services__info_title--speed">
+                    the quick fox jumps over the lazy
+                    dog
+                  </h5>
+                  <p class="services__info_text">
+                    Things on a very small scale ...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section partners">
+      <div class="container">
+        <div class="partners__inner">
+
+          <div class="partners__items">
+            <a class="partners__item" href="#">
+              <img class="partners__item-img" src="images/partner-hooli.svg" alt="partner" width="149" height="50">
+            </a>
+            <a class="partners__item" href="#">
+              <img class="partners__item-img" src="images/partner-lyft.svg" alt="partner" width="139" height="99">
+            </a>
+            <a class="partners__item" href="#">
+              <img class="partners__item-img" src="images/partner-hat.svg" alt="partner" width="149" height="109">
+            </a>
+            <a class="partners__item" href="#">
+              <img class="partners__item-img" src="images/partner-stripe.svg" alt="partner" width="149" height="60">
+            </a>
+            <a class="partners__item" href="#">
+              <img class="partners__item-img" src="images/partner-aws.svg" alt="partner" width="151" height="92">
+            </a>
+            <a class="partners__item" href="#">
+              <img class="partners__item-img" src="images/partner-reddit.svg" alt="partner" width="149" height="142">
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="feedback partners__feedback">
+        <div class="container">
+          <div class="feedback__inner">
+            <h4 class="title feedback__title">Subscribe For Latest
+              Newsletter
+            </h4>
+
+            <form class="feedback__form" method="get">
+              <input class="feedback__input" type="email" placeholder="Your Email">
+
+              <button class="feedback__btn" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contacts" id="contact">
+      <div class="container">
+        <div class="contacts__inner">
+
+          <h2 class="title contacts__title">
+            Get In Touch
+          </h2>
+
+          <p class="subtitle contacts__subtitle">
+            Problems trying to resolve the conflict between
+            the two major realms of Classical physics: Newtonian mechanics
+          </p>
+
+          <div class="contacts__info info--hover">
+            <div class="info_item--hover contacts__info_item">
+              <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M55.9295 38.9947C55.578 38.6426 55.1605 38.3632 54.7009 38.1726C54.2413 37.982 53.7487 37.8839 53.2511 37.8839C52.7536 37.8839 52.2609 37.982 51.8013 38.1726C51.3417 38.3632 50.9242 38.6426 50.5727 38.9947L44.534 45.0334C41.7344 44.1999 36.5102 42.3057 33.1992 38.9947C29.8881 35.6836 27.9939 30.4594 27.1605 27.6598L33.1992 21.6211C33.5513 21.2696 33.8306 20.8521 34.0212 20.3925C34.2118 19.9329 34.3099 19.4403 34.3099 18.9427C34.3099 18.4452 34.2118 17.9525 34.0212 17.4929C33.8306 17.0333 33.5513 16.6159 33.1992 16.2643L18.0456 1.11076C17.6941 0.758646 17.2766 0.479298 16.817 0.288701C16.3574 0.0981045 15.8647 0 15.3672 0C14.8696 0 14.377 0.0981045 13.9174 0.288701C13.4578 0.479298 13.0403 0.758646 12.6888 1.11076L2.41467 11.3849C0.975078 12.8245 0.164361 14.802 0.194668 16.8212C0.281801 22.2159 1.71003 40.9533 16.4772 55.7204C31.2443 70.4876 49.9817 71.912 55.3802 72.003H55.4863C57.4865 72.003 59.377 71.215 60.809 69.783L71.0831 59.5088C71.4352 59.1573 71.7146 58.7398 71.9052 58.2802C72.0957 57.8207 72.1938 57.328 72.1938 56.8304C72.1938 56.3329 72.0957 55.8402 71.9052 55.3807C71.7146 54.9211 71.4352 54.5036 71.0831 54.1521L55.9295 38.9947ZM55.4484 64.4224C50.7205 64.3428 34.544 63.0737 21.834 50.3599C9.08224 37.6081 7.84722 21.3749 7.77146 16.7417L15.3672 9.14594L25.164 18.9427L20.2656 23.8411C19.8203 24.2861 19.4929 24.835 19.313 25.4382C19.1331 26.0414 19.1063 26.68 19.2351 27.2961C19.3261 27.7318 21.5498 38.0627 27.8386 44.3515C34.1273 50.6402 44.4583 52.864 44.8939 52.9549C45.5097 53.0874 46.1489 53.0627 46.7527 52.8833C47.3565 52.7039 47.9054 52.3755 48.3489 51.9283L53.2511 47.0299L63.0479 56.8267L55.4484 64.4224Z" fill="#00A0C1"/>
+              </svg>
+
+              <a class="contacts__info_text" href="mailto:georgia.young@example.com">
+                georgia.young@example.com
+              </a>
+
+              <a class="contacts__info_text" href="mailto:georgia.young@ple.com">
+                georgia.young@ple.com
+              </a>
+
+              <a class="contacts__link" href="#">
+                <h4 class="contacts__info_title">Get Support</h4>
+              </a>
+
+              <button class="btn contacts__info_btn">Submit Request</button>
+            </div>
+
+            <div class="info_item--hover contacts__info_item">
+              <svg width="73" height="72" viewBox="0 0 73 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M29.5 42C37.4967 42 44 35.721 44 28C44 20.279 37.4967 14 29.5 14C21.5032 14 15 20.279 15 28C15 35.721 21.5032 42 29.5 42ZM29.5 21C33.4984 21 36.75 24.1395 36.75 28C36.75 31.8605 33.4984 35 29.5 35C25.5016 35 22.25 31.8605 22.25 28C22.25 24.1395 25.5016 21 29.5 21Z" fill="#00A0C1"/>
+                <path d="M27.4338 70.3403C28.0367 70.7693 28.7591 71 29.5 71C30.2409 71 30.9633 70.7693 31.5662 70.3403C32.6492 69.577 58.103 51.2624 57.9997 28.4002C57.9997 12.7411 45.214 0 29.5 0C13.786 0 1.00031 12.7411 1.00031 28.3825C0.897002 51.2624 26.3508 69.577 27.4338 70.3403ZM29.5 7.10006C41.2882 7.10006 50.8748 16.6532 50.8748 28.418C50.9496 44.173 35.2427 58.3199 29.5 62.9598C23.7609 58.3163 8.05042 44.1659 8.12524 28.4002C8.12524 16.6532 17.7118 7.10006 29.5 7.10006Z" fill="#00A0C1"/>
+              </svg>
+
+              <a class="contacts__info_text" href="mailto:georgia.young@example.com">
+                georgia.young@example.com
+              </a>
+
+              <a class="contacts__info_text" href="mailto:georgia.young@ple.com">
+                georgia.young@ple.com
+              </a>
+
+              <a class="contacts__link" href="#">
+                <h4 class="contacts__info_title">Get Support</h4>
+              </a>
+
+              <button class="btn contacts__info_btn">Submit Request</button>
+            </div>
+
+            <div class="info_item--hover contacts__info_item">
+              <svg width="70" height="71" viewBox="0 0 70 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M68.3484 1.16174C67.9592 0.758784 67.4674 0.47979 66.9308 0.357565C66.3943 0.23534 65.8354 0.274964 65.3198 0.47178L1.8615 24.4705C1.31422 24.6864 0.84305 25.0704 0.51056 25.5714C0.178071 26.0723 0 26.6667 0 27.2754C0 27.8841 0.178071 28.4785 0.51056 28.9794C0.84305 29.4804 1.31422 29.8644 1.8615 30.0803L29.5524 41.5997L40.6287 70.3982C40.8368 70.9423 41.1935 71.4113 41.6549 71.7471C42.1162 72.0829 42.6619 72.271 43.2248 72.2881C43.8077 72.2757 44.3733 72.0798 44.847 71.7264C45.3207 71.3729 45.6804 70.8785 45.8785 70.3082L68.9542 4.31158C69.1507 3.78084 69.1981 3.20293 69.0909 2.64524C68.9836 2.08755 68.7261 1.57305 68.3484 1.16174ZM43.2248 60.8887L35.1771 39.8898L48.9937 25.5205L44.9266 21.2907L30.9946 35.78L10.9187 27.2904L61.4834 8.30138L43.2248 60.8887Z" fill="#00A0C1"/>
+              </svg>
+
+              <a class="contacts__info_text" href="mailto:georgia.young@example.com">
+                georgia.young@example.com
+              </a>
+
+              <a class="contacts__info_text" href="mailto:georgia.young@ple.com">
+                georgia.young@ple.com
+              </a>
+
+              <a class="contacts__link" href="#">
+                <h4 class="contacts__info_title">Get Support</h4>
+              </a>
+
+              <button class="btn contacts__info_btn">Submit Request</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <article class="feedback">
+      <div class="container">
+        <div class="feedback__inner">
+
+          <div class="feedback__info">
+            <h3 class="title feedback__title">
+              Consulting Agency For Your Business
+            </h3>
+
+            <p class="feedback__text">
+              Consulting Agency For Your Business
+            </p>
+          </div>
+
+          <button class="btn feedback__btn">Contact Us</button>
+
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <h6 class="footer__title">Company Info</h6>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">About Us</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Carrier</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">We are hiring</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Blog</a>
+            </li>
+          </ul>
+
+          <ul class="footer__list">
+            <li class="footer__item">
+              <h6 class="footer__title">Legal</h6>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">About Us</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Carrier</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">We are hiring</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Blog</a>
+            </li>
+          </ul>
+
+          <ul class="footer__list">
+            <li class="footer__item">
+              <h6 class="footer__title">Features</h6>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Business Marketing</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">User Analytic</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Live Chat</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Unlimited Support</a>
+            </li>
+          </ul>
+
+          <ul class="footer__list">
+            <li class="footer__item">
+              <h6 class="footer__title">Resources</h6>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">IOS & Android</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Watch a Demo</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Customers</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">API</a>
+            </li>
+          </ul>
+
+          <ul class="footer__list">
+            <li class="footer__item">
+              <h6 class="footer__title">Get In Touch</h6>
+            </li>
+            <li class="footer__contacts footer__item">
+              <a class="footer__link" href="tel:4805550103">
+                <img class="footer__list-img" src="images/phone-small.svg" alt="phone">
+                (480) 555-0103
+              </a>
+            </li>
+            <li class="footer__contacts footer__item">
+              <a class="footer__link" href="#">
+                <img class="footer__list-img" src="images/map-small.svg" alt="map">
+                4517 Washington Ave. Manchester, Kentucky 39495
+              </a>
+            </li>
+            <li class="footer__contacts footer__item">
+              <a class="footer__link" href="mailto:debra.holt@example.com">
+                <img class="footer__list-img" src="images/telegram-small.svg" alt="telegram">
+                debra.holt@example.com
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="footer__copyright">
+      <div class="container">
+        <div class="footer__copyright-inner">
+          <p class="footer__text">
+            Made With Love By Figmaland All Right Reserved
+          </p>
+
+          <ul class="footer__social">
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <img class="footer__social-img" src="images/facebook.svg" alt="facebook">
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <img class="footer__social-img" src="images/instagram.svg" alt="instagram">
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <img class="footer__social-img" src="images/twitter.svg" alt="twitter">
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                <img class="footer__social-img" src="images/youtube.svg" alt="youtube">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script src="js/main.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Travel</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<div class="wrapper">
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/logo.svg" alt="logo">
+        </a>
+
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#places">Destination</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#offer">Offer</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#tour">Tour</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#blog">Blog</a>
+            </li>
+          </ul>
+        </nav>
+
+        <span></span>
+
+        <div class="header__buttons">
+          <button class="menu-btn display-none">
+            <span></span>
+          </button>
+
+          <button class="header__btn header__btn--account">
+            <img class="header__btn-img--account" src="images/user.svg" alt="user icon">
+            My Account
+          </button>
+
+          <form class="header__search" method="get">
+            <input class="header__input-search" type="text">
+            <button class="header__search-cancel" type="reset">
+              <img src="images/cancel.svg" alt="cancel">
+            </button>
+            <button class="header__btn header__input-btn" type="submit">
+              <img class="header__btn-img" src="images/search.svg" alt="search icon">
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="account">
+      <form class="account__form" method="get">
+        <span class="account__cancel">
+            <img src="images/cancel.svg" alt="cancel">
+        </span>
+
+        <p class="account__text">enter your login details</p>
+
+        <input class="account__form-input" type="text" placeholder="enter login">
+
+        <input class="account__form-input" type="password" placeholder="enter password">
+
+        <button class="account__form-btn" type="submit">Enter</button>
+        
+        <button class="account__reload" type="reset">
+          <img src="images/reload.svg" alt="reload" width="20px" height="20px">
+        </button>
+      </form>
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <section class="about">
+      <div class="container">
+        <div class="about__inner">
+
+          <div class="slider about__slider">
+            <img class="about__slider-img" src="images/about-bg-1.jpg" alt="bg">
+            <img class="about__slider-img" src="images/about-bg-1.jpg" alt="bg">
+            <img class="about__slider-img" src="images/about-bg-1.jpg" alt="bg">
+          </div>
+
+          <h1 class="about__title">
+            It’s Time To
+            Explore The World
+          </h1>
+
+          <button class="btn about__btn">
+            Plan Your Trip
+          </button>
+
+          <span class="liner"></span>
+
+          <form class="about__destinations">
+            <label>
+              <span class="about__destinations-title">
+                Destinations
+              </span>
+              <select name="way">
+                <option value="Arab Egypt">Arab Egypt</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Russia">Russia</option>
+              </select>
+            </label>
+            <label>
+              <span class="about__destinations-title">
+                Check In
+              </span>
+              <select name="season">
+                <option value="winter">winter</option>
+                <option value="spring">spring</option>
+                <option value="summer">summer</option>
+                <option value="autumn">autumn</option>
+              </select>
+            </label>
+            <label>
+              <span class="about__destinations-title">
+                Price Range
+              </span>
+              <select name="price">
+                <option value="$500 - $10,0000">$500 - $10,0000</option>
+                <option value="$10,0000 - $50, 000">$10,0000 - $50, 000</option>
+                <option value="$100 - $500">$100 - $500</option>
+              </select>
+            </label>
+            <button class="btn about__destinations-btn">
+              Discover Now
+            </button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="info section">
+      <div class="container">
+        <div class="info__inner">
+
+          <a class="info__item" href="#">
+            <span class="info__photo">
+              <img class="info__photo-img" src="images/info-photo-1.png" alt="photo icon">
+            </span>
+            <h5 class="info__item-title">
+              Choose Destination
+            </h5>
+            <p class="info__item-text">
+              Lorem Ipsum is simply dummy text of the printing setting
+            </p>
+          </a>
+
+          <a class="info__item" href="#">
+        <span class="info__photo">
+          <img class="info__photo-img" src="images/info-photo-2.png" alt="photo icon">
+        </span>
+            <h5 class="info__item-title">
+              Explore The Place
+            </h5>
+            <p class="info__item-text">
+              Lorem Ipsum is simply dummy text of the printing setting
+            </p>
+          </a>
+
+          <a class="info__item" href="#">
+        <span class="info__photo">
+          <img class="info__photo-img" src="images/info-photo-3.png" alt="photo icon">
+        </span>
+            <h5 class="info__item-title">
+              Start Your Journey
+            </h5>
+            <p class="info__item-text">
+              Lorem Ipsum is simply dummy text of the printing setting
+            </p>
+          </a>
+
+          <a class="info__item" href="#">
+        <span class="info__photo">
+          <img class="info__photo-img" src="images/info-photo-4.png" alt="photo icon">
+        </span>
+            <h5 class="info__item-title">
+              Let’s Enjoy
+            </h5>
+            <p class="info__item-text">
+              Lorem Ipsum is simply dummy text of the printing setting
+            </p>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+    <section class="section cities" id="offer">
+      <div class="container">
+        <div class="cities__inner">
+
+          <div class="cities__info">
+            <div class="cities__info-title">
+              Top <span class="cities__info-title--color">Destinations</span>
+              In The World
+            </div>
+            <p class="cities__info-text">
+              It is a long established fact that a reader will be the distracted by the readable content of a page when looking at its layout from it.
+            </p>
+            <button class="btn cities__btn">
+              Discover More
+            </button>
+          </div>
+
+          <span class="cities__photo">
+            <img class="cities__photo-img" src="images/cities-img-1.jpg" alt="photo icon">
+
+            <span class="cities__photo-title">
+              Cuba City
+            </span>
+          </span>
+
+          <span class="cities__photo">
+            <img class="cities__photo-img" src="images/cities-img-2.jpg" alt="photo icon">
+
+            <span class="cities__photo-title">
+              Paris
+            </span>
+          </span>
+
+          <span class="cities__photo">
+            <img  class="cities__photo-img" src="images/cities-img-3.jpg" alt="photo icon">
+
+            <span class="cities__photo-title">
+              Japan
+            </span>
+          </span>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="tour">
+      <div class="container">
+        <div class="services__inner">
+
+          <span class="services__photo">
+            <span class="services__colors-item services__colors-item--rect"></span>
+            <span class="services__colors-item services__colors-item--circle"></span>
+            <span class="services__colors-item services__colors-item--points"></span>
+
+            <img class="services__photo-img" src="images/services-photo-1.jpg" alt="content photo">
+          </span>
+
+          <div class="services__info">
+            <h2 class="services__title">
+              We Offering In Total 793 Tours Out The World
+            </h2>
+
+            <h5 class="services__subtitle services__subtitle--user">
+              Best Travel Guide Always For Your Services
+            </h5>
+            <p class="services__text services--line">
+              Travel has helped us to understandsa the meaning of life and it has helped us become better people. Each time we travel, we see the world with new eyes. Travel has helped us to understand the meaning of life
+            </p>
+            <h5 class="services__subtitle services__subtitle--world services--line">
+              World Class Services Provide For You
+            </h5>
+            <h5 class="services__subtitle services__subtitle--sound services--line">
+              24/7 Strong Customer Support
+            </h5>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section places" id="places">
+      <div class="container">
+        <div class="places__inner">
+
+          <h2 class="places__title">
+            Choose Your Destination
+          </h2>
+
+          <div class="places__items">
+            <div class="places__item places__item--margin">
+              <img class="places__item-img" src="images/places-img-1.jpg" alt="content icon">
+
+              <div class="places__info">
+                <div class="places__info-content">
+                  <h5 class="places__subtitle">
+                    Santorini, Oia Greece
+                  </h5>
+                  <div class="places__prices">
+                    <p class="places__price">
+                      $2000
+                    </p>
+                    <p class="places__grade">
+                      5k Reviews
+                    </p>
+                  </div>
+                </div>
+                <button class="btn places__btn">
+                  +
+                </button>
+              </div>
+            </div>
+
+            <div class="places__item places__item--central">
+              <span class="places__item--triangle"></span>
+              <span class="places__item--circle"></span>
+              <img class="places__item-img" src="images/places-img-2.jpg" alt="content icon">
+
+              <div class="places__info">
+                <div class="places__info-content">
+                  <h5 class="places__subtitle">
+                    Santorini, Oia Greece
+                  </h5>
+                  <div class="places__prices">
+                    <p class="places__price">
+                      $2000
+                    </p>
+                    <p class="places__grade">
+                      5k Reviews
+                    </p>
+                  </div>
+                </div>
+                <button class="btn places__btn">
+                  +
+                </button>
+              </div>
+            </div>
+
+            <div class="places__item places__item--margin">
+              <img class="places__item-img" src="images/places-img-3.jpg" alt="content icon">
+
+              <div class="places__info">
+                <div class="places__info-content">
+                  <h5 class="places__subtitle">
+                    Santorini, Oia Greece
+                  </h5>
+                  <div class="places__prices">
+                    <p class="places__price">
+                      $2000
+                    </p>
+                    <p class="places__grade">
+                      5k Reviews
+                    </p>
+                  </div>
+                </div>
+                <button class="btn places__btn">
+                  +
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section customers" id="blog">
+      <div class="container">
+        <div class="customers__inner">
+
+          <h2 class="customers__title">
+            What Our Happy Customers
+            Say About Us
+          </h2>
+
+          <div class="customers__photos">
+            <span class="customers__photo customers__photo--1"></span>
+            <span class="customers__photo customers__photo--2"></span>
+            <span class="customers__photo customers__photo--3"></span>
+            <span class="customers__photo customers__photo--4"></span>
+            <span class="customers__photo customers__photo--5"></span>
+            <span class="customers__photo customers__photo--6"></span>
+            <span class="customers__photo customers__photo--7"></span>
+          </div>
+
+          <div class="customers__slider">
+            <div class="customers__slider-item">
+              <h4 class="customers__slider-title">
+                Md Shamim Hossain
+                <span class="customers__slider-subtitle">
+                UI/UX Designer
+              </span>
+              </h4>
+              <p class="customers__text">
+                Jetrips Hotel is an excellent choice for anybody for considering hosting their events there. Top levela facilities and excellent staff make for a brilliantad environment within which to operate. The hotel is meticulous in its planning.
+              </p>
+            </div>
+
+            <div class="customers__slider-item">
+              <h4 class="customers__slider-title">
+                Md Shamim Hossain
+                <span class="customers__slider-subtitle">
+                UI/UX Designer
+              </span>
+              </h4>
+              <p class="customers__text">
+                Jetrips Hotel is an excellent choice for anybody for considering hosting their events there. Top levela facilities and excellent staff make for a brilliantad environment within which to operate. The hotel is meticulous in its planning.
+              </p>
+            </div>
+
+            <div class="customers__slider-item">
+              <h4 class="customers__slider-title">
+                Md Shamim Hossain
+                <span class="customers__slider-subtitle">
+                UI/UX Designer
+              </span>
+              </h4>
+              <p class="customers__text">
+                Jetrips Hotel is an excellent choice for anybody for considering hosting their events there. Top levela facilities and excellent staff make for a brilliantad environment within which to operate. The hotel is meticulous in its planning.
+              </p>
+            </div>
+
+            <div class="customers__slider-item">
+              <h4 class="customers__slider-title">
+                Md Shamim Hossain
+                <span class="customers__slider-subtitle">
+                UI/UX Designer
+              </span>
+              </h4>
+              <p class="customers__text">
+                Jetrips Hotel is an excellent choice for anybody for considering hosting their events there. Top levela facilities and excellent staff make for a brilliantad environment within which to operate. The hotel is meticulous in its planning.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section apps">
+      <div class="container">
+        <div class="apps__inner">
+
+          <h2 class="apps__title">
+            Download Now Travel
+            Community Apps
+          </h2>
+
+          <span class="apps__photos">
+            <span class="apps__image apps__image--plane"></span>
+            <span class="apps__image apps__image--screen-1"></span>
+            <span class="apps__image apps__image--screen-2"></span>
+            <span class="apps__image apps__image--bagpack"></span>
+            <span class="apps__image apps__image--logo"></span>
+          </span>
+          
+          <div class="apps__buttons">
+            <a class="apps__btn" href="https://play.google.com/store/apps/details?id=org.telegram.messenger&hl=ru&gl=US" target="_blank">
+              <img class="apps__img" src="images/google-play.svg" alt="google play">
+            </a>
+            <a class="apps__btn" href="https://apps.apple.com/us/app/telegram-messenger/id686449807" target="_blank">
+              <img class="apps__img" src="images/app-store.svg" alt="app store">
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+
+        <div class="footer__info">
+          <a class="logo footer__logo" href="#">
+            <img class="logo__img" src="images/logo.svg" alt="logo">
+          </a>
+
+          <p class="footer__text">
+            You can dream, create, design, and buildsa the most wonderful place.
+          </p>
+
+          <span class="footer__number">
+            <a href="tel:+0123456987">+0123 456 987</a> , <a href="tel:+0123456987">+0123 456 987</a>
+          </span>
+
+          <a class="footer__mail" href="mailto:yourmailaddress@gmail.com">
+            yourmailaddress@gmail.com
+          </a>
+
+          <a class="footer__site" href="https://www.yourwebsitename.com">
+            www.yourwebsitename.com
+          </a>
+        </div>
+
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <h4 class="footer__subtitle">Quick Links</h4>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__link" href="#">About Us</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__link" href="#">Destinations</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__link" href="#">Latest Blo</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__link" href="#">Our Team</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__link" href="#">Contact Us</a>
+            </li>
+          </ul>
+
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <h4 class="footer__subtitle">Support</h4>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__link" href="#">Customer Support</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__link" href="#">Privacy & Policy</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__link" href="#">Terms & Condition</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__link" href="#">Forum</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__link" href="#">Tour Guid</a>
+            </li>
+          </ul>
+        </nav>
+
+        <form class="footer__form" method="get">
+          <h4 class="footer__subtitle footer__form-title">
+            Newsletter
+          </h4>
+
+          <label>
+            <input class="footer__form-input" type="text" placeholder="Subscribe...">
+
+            <button class="footer__form-reset" type="reset"></button>
+          </label>
+
+          <button class="btn footer__form-btn" type="submit">
+            Subscribe Now
+          </button>
+        </form>
+
+      </div>
+    </div>
+
+    <p class="footer__copyright">
+      Copyright @2020 Ravel. Designed By
+      <a class="footer__copyright-name" href="#">Md Shamim Hossain</a>
+    </p>
+  </footer>
+
+</div>
+
+<script src="js/main.min.js"></script>
+</body>
+</html>
