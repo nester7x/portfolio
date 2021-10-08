@@ -1,0 +1,59 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/*1024px*/
+
+@media (max-width: 1024px) {
+
+}
+
+/*------*/
+
+/*768px*/
+
+@media (max-width: 768px) {
+
+}
+
+/*------*/
+
+/*426px*/
+
+@media (max-width: 426px) {
+
+}
+
+/*------*/
+
+/*375px*/
+
+@media (max-width: 375px) {
+
+}
+
+/*------*/
+
+/*320px*/
+
+@media (max-width: 320px) {
+
+}
+
+/*------*/
