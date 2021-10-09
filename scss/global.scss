@@ -1,3 +1,13 @@
+body {
+  font-family: 'Geometria', Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 23px;
+  background-color: #060606;
+  color: #FFFFFF;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -18,42 +28,69 @@
   padding: 0 15px;
 }
 
-/*1024px*/
+.title {
+  font-family: 'Acworth', Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
 
-@media (max-width: 1024px) {
+/*---320px---*/
+
+@media (min-width: 320px) {
+  .title {
+    font-size: 42px;
+    line-height: 46px;
+  }
+}
+
+/*------------*/
+
+/*---375px---*/
+
+@media (min-width: 375px) {
 
 }
 
-/*------*/
+/*------------*/
 
-/*768px*/
+/*---426px---*/
 
-@media (max-width: 768px) {
-
-}
-
-/*------*/
-
-/*426px*/
-
-@media (max-width: 426px) {
+@media (min-width: 426px) {
 
 }
 
-/*------*/
+/*------------*/
 
-/*375px*/
+/*---568px---*/
 
-@media (max-width: 375px) {
-
-}
-
-/*------*/
-
-/*320px*/
-
-@media (max-width: 320px) {
+@media (min-width: 568px) {
 
 }
 
-/*------*/
+/*------------*/
+
+/*---768px---*/
+
+@media (min-width: 768px) {
+
+}
+
+/*------------*/
+
+/*---910px---*/
+
+@media (min-width: 910px) {
+
+}
+
+/*------------*/
+
+/*----------------------*/
+
+/*---1200px---*/
+
+@media (min-width: 1200px) {
+
+}
+
+/*------------*/
