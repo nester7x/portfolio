@@ -6,6 +6,9 @@ body {
   line-height: 23px;
   background-color: #060606;
   color: #FFFFFF;
+  &.active {
+    overflow: hidden;
+  }
 }
 
 .wrapper {
@@ -25,7 +28,7 @@ body {
 .container {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 21px;
 }
 
 .title {
@@ -41,6 +44,14 @@ body {
     font-size: 42px;
     line-height: 46px;
   }
+  .logo {
+    font-family: 'KyivType Sans', Arial, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 8px;
+    line-height: 10px;
+    color: inherit;
+  }
 }
 
 /*------------*/
@@ -48,7 +59,10 @@ body {
 /*---375px---*/
 
 @media (min-width: 375px) {
-
+  .logo {
+    font-size: 10px;
+    line-height: 12px;
+  }
 }
 
 /*------------*/
@@ -56,7 +70,10 @@ body {
 /*---426px---*/
 
 @media (min-width: 426px) {
-
+  .logo {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 
 /*------------*/
