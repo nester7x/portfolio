@@ -89,7 +89,10 @@ body {
 /*---768px---*/
 
 @media (min-width: 768px) {
-
+  .title {
+    font-size: 55px;
+    line-height: 66px;
+  }
 }
 
 /*------------*/
@@ -107,7 +110,10 @@ body {
 /*---1200px---*/
 
 @media (min-width: 1200px) {
-
+  .title {
+    font-size: 80px;
+    line-height: 88px;
+  }
 }
 
 /*------------*/

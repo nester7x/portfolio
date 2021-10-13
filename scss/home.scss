@@ -1,0 +1,56 @@
+/*---320px---*/
+
+@media (min-width: 320px) {
+.home {
+  margin: 65px 0 0 0;
+  &__inner {
+    position: relative;
+    padding: 30px 0;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background: url("../images/mobile_bg.jpg") no-repeat center center;
+    background-size: cover;
+    &:after {
+      position: absolute;
+      right: 60px;
+      bottom: 0;
+      content: 'My portfolio';
+      color: #E4E4E4;
+      font-size: 15px;
+      line-height: 19px;
+      z-index: 3;
+    }
+    &:before {
+      position: absolute;
+      right: -25px;
+      bottom: 8px;
+      content: '';
+      background-color: #ffffff;
+      width: 71px;
+      height: 1px;
+      z-index: 3;
+    }
+  }
+  &__title {
+    span {
+      color: $accent;
+    }
+  }
+}
+}
+
+/*------------*/
+
+/*---768px---*/
+
+@media (min-width: 768px) {
+  .home {
+    &__inner {
+      background: url("../images/desktop_bg.jpg") no-repeat center center;
+      background-size: cover;
+    }
+  }
+}
+
+/*------------*/
