@@ -22,17 +22,4 @@ $(function () {
 
     /*---------*/
 
-    /*hover portfolio*/
-
-    const portfolioItem = document.querySelectorAll('.portfolio__item');
-    const portfolioInfo = document.querySelectorAll('.portfolio__info');
-
-    // portfolioItem.forEach(function (item) {
-    //     item.addEventListener('mouseover', function () {
-    //         item.classList.toggle('active')
-    //     })
-    // })
-
-    /*-------------------*/
-
 })
