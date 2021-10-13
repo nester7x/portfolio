@@ -11,26 +11,6 @@
     align-items: center;
     background: url("../images/mobile_bg.jpg") no-repeat center center;
     background-size: cover;
-    &:after {
-      position: absolute;
-      right: 60px;
-      bottom: 0;
-      content: 'My portfolio';
-      color: #E4E4E4;
-      font-size: 15px;
-      line-height: 19px;
-      z-index: 3;
-    }
-    &:before {
-      position: absolute;
-      right: -25px;
-      bottom: 8px;
-      content: '';
-      background-color: #ffffff;
-      width: 71px;
-      height: 1px;
-      z-index: 3;
-    }
   }
   &__title {
     span {
@@ -54,3 +34,15 @@
 }
 
 /*------------*/
+
+/*--------415px--------------------------------*/
+
+@media (max-height: 415px) and (orientation: landscape) {
+  .home {
+    &__inner {
+      min-height: 70vh;
+    }
+  }
+}
+
+/*---------------------------------------------*/

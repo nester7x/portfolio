@@ -1,4 +1,6 @@
 $(function () {
+    /*menu-burger*/
+
     const burger = document.querySelector('.menu__burger');
     const menu = document.querySelector('.menu');
     const menuLink = document.querySelectorAll('.menu__link');
@@ -17,4 +19,20 @@ $(function () {
             body.classList.remove('active');
         };
     })
+
+    /*---------*/
+
+    /*hover portfolio*/
+
+    const portfolioItem = document.querySelectorAll('.portfolio__item');
+    const portfolioInfo = document.querySelectorAll('.portfolio__info');
+
+    // portfolioItem.forEach(function (item) {
+    //     item.addEventListener('mouseover', function () {
+    //         item.classList.toggle('active')
+    //     })
+    // })
+
+    /*-------------------*/
+
 })

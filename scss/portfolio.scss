@@ -1,0 +1,178 @@
+/*---320px---*/
+
+@media (min-width: 320px) {
+  .portfolio {
+    &__inner {
+      padding: 30px 0;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      &:after {
+        position: absolute;
+        right: 60px;
+        top: 0;
+        content: 'My portfolio';
+        color: #E4E4E4;
+        font-size: 15px;
+        line-height: 19px;
+        z-index: 3;
+      }
+      &:before {
+        position: absolute;
+        right: -25px;
+        top: 8px;
+        content: '';
+        background-color: #ffffff;
+        width: 71px;
+        height: 1px;
+        z-index: 3;
+      }
+    }
+    &__info {
+      display: none;
+      animation: .4s portfolio_info_anim;
+    }
+    @keyframes portfolio_info_anim {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      position: relative;
+      padding: 18px;
+      margin-bottom: 50px;
+      min-height: 200px;
+      background-size: cover;
+      box-shadow: 0 0 .5px 0 #ffffff;
+      &:hover {
+        .portfolio__info {
+          display: block;
+        }
+      }
+      &:nth-child(1) {
+        background: url("../images/Indicorp.jpg");
+        background-size: cover;
+      }
+      &:nth-child(2) {
+        background: url("../images/Travel.jpg");
+        background-size: cover;
+      }
+      &:nth-child(3) {
+        background: url("../images/PitBull.jpg");
+        background-size: cover;
+      }
+      &:nth-child(4) {
+        background: url("../images/Vivan.jpg");
+        background-size: cover;
+      }
+      &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+        &:hover {
+          .portfolio__date, .portfolio__subtitle, .portfolio__code_link {
+            color: #4f7e7e;
+          }
+        }
+      }
+    }
+    &__date {
+      font-family: 'Geometria', Arial, sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 12px;
+      line-height: 15px;
+    }
+    &__subtitle, &__code_link {
+      margin-top: 10px;
+      font-family: 'Geometria', Arial, sans-serif;
+      font-weight: 800;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 20px;
+      color: #ffffff;
+    }
+    &__code_link {
+      display: inline-block;
+      &:hover {
+        border-bottom: 1px solid #4f7e7e;
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+/*------------*/
+
+/*---568px---*/
+
+@media (min-width: 568px) {
+  .portfolio {
+    &__inner {
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      margin: 0 -10px;
+      padding: 50px 0;
+    }
+    &__item {
+      margin: 10px;
+      width: 45%;
+    }
+    &__item:nth-child(odd) {
+      margin-bottom: 25px;
+    }
+    &__item:nth-child(even) {
+      margin-top: 25px;
+    }
+  }
+}
+
+/*------------*/
+
+/*---910px---*/
+
+@media (min-width: 910px) {
+  .portfolio {
+    &__inner {
+      &:after {
+        right: 110px;
+      }
+      &:before {
+        right: -75px;
+        width: 171px;
+      }
+    }
+    &__item {
+      margin: 0 10px;
+      padding: 22px;
+      min-height: 300px;
+    }
+    &__item:nth-child(odd) {
+      margin-bottom: 55px;
+    }
+    &__item:nth-child(even) {
+      margin-top: 55px;
+    }
+  }
+}
+
+/*------------*/
+
+/*----------------------*/
+
+/*---1200px---*/
+
+@media (min-width: 1200px) {
+  .portfolio {
+    &__item {
+      padding: 34px;
+      min-height: 400px;
+    }
+  }
+}
+
+/*------------*/
