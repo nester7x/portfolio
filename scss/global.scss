@@ -2,8 +2,6 @@ body {
   font-family: 'Geometria', Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 18px;
-  line-height: 23px;
   background-color: #060606;
   color: #FFFFFF;
   &.active {
@@ -40,6 +38,10 @@ body {
 /*---320px---*/
 
 @media (min-width: 320px) {
+  body {
+    font-size: 9px;
+    line-height: 11px;
+  }
   .title {
     font-size: 42px;
     line-height: 46px;
@@ -51,6 +53,21 @@ body {
     font-size: 8px;
     line-height: 10px;
     color: inherit;
+  }
+  .soc_list {
+    display: flex;
+    align-items: center;
+    &__item {
+      margin-right: 25px;
+    }
+    &__link {
+      &:hover {
+        g {
+          transition: .2s;
+          fill: #ffffff;
+        }
+      }
+    }
   }
 }
 
@@ -89,6 +106,10 @@ body {
 /*---768px---*/
 
 @media (min-width: 768px) {
+  body {
+    font-size: 18px;
+    line-height: 23px;
+  }
   .title {
     font-size: 55px;
     line-height: 66px;

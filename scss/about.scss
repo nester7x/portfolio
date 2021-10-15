@@ -1,0 +1,176 @@
+/*---320px---*/
+
+@media (min-width: 320px) {
+  .about {
+    &__inner {
+      padding: 30px 0;
+      position: relative;
+      &:after {
+        position: absolute;
+        left: 60px;
+        top: 0;
+        content: 'About me';
+        color: #E4E4E4;
+        font-size: 15px;
+        line-height: 19px;
+        z-index: 3;
+      }
+      &:before {
+        position: absolute;
+        left: -25px;
+        top: 8px;
+        content: '';
+        background-color: #ffffff;
+        width: 71px;
+        height: 1px;
+        z-index: 3;
+      }
+    }
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      p {
+        margin-bottom: 17px;
+      }
+    }
+    &__img_wrapper {
+      display: inline-block;
+      position: relative;
+      margin-bottom: 60px;
+      width: 195px;
+      height: 215px;
+      border: 6px solid $accent;
+    }
+    &__img {
+      position: absolute;
+      right: 27px;
+      top: 27px;
+      object-fit: cover;
+    }
+    &__title {
+      margin-bottom: 27px;
+      font-size: 36px;
+      line-height: 40px;
+      span {
+        color: $accent;
+      }
+    }
+    &__soc_list {
+      margin-bottom: 30px;
+    }
+    &__subtitle {
+      font-family: 'Geometria', Arial, sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 17px;
+    }
+    &__item {
+      margin-bottom: 17px;
+    }
+    &__item_text {
+      font-family: 'Geometria', Arial, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      color: $accent;
+      margin-bottom: 15px;
+    }
+    &__item_content {
+      display: flex;
+      align-items: center;
+    }
+    &__line_wrapper {
+      height: 23px;
+      background-color: #ffffff;
+      position: relative;
+      width: 100%;
+    }
+    &__line {
+      height: 100%;
+      background-color: $accent;
+    }
+    &__num {
+      font-family: 'Geometria', Arial, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      margin-left: 14px;
+    }
+  }
+}
+
+/*------------*/
+
+/*---568px---*/
+
+@media (min-width: 568px) {
+  .about {
+    &__skills_list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 0 -10px;
+    }
+    &__item {
+      width: 45%;
+      margin: 5px 10px;
+    }
+  }
+}
+
+/*------------*/
+
+/*---768px---*/
+
+@media (min-width: 768px) {
+  .about {
+    &__info {
+      flex-direction: row;
+      p {
+        max-width: 670px;
+      }
+    }
+    &__img_wrapper {
+      margin-left: 33px;
+    }
+    &__self_info {
+      margin-left: 100px;
+      width: 60%;
+    }
+    &__title {
+      max-width: 500px;
+    }
+    &__skills_list {
+      flex-wrap: nowrap;
+    }
+    &__item {
+      width: 33%;
+      margin: 0 10px;
+    }
+    &__line {
+      color: #ffffff;
+      width: 100%;
+    }
+  }
+}
+
+/*------------*/
+
+/*---910px---*/
+
+@media (min-width: 910px) {
+  .about {
+    &__self_info {
+      margin-left: 150px;
+    }
+  }
+}
+
+/*------------*/
+
+/*----------------------*/
