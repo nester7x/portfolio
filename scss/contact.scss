@@ -1,0 +1,99 @@
+/*---320px---*/
+
+@media (min-width: 320px) {
+  .contact {
+    &__inner {
+      padding: 30px 0 60px;
+    }
+    &__title {
+      text-align: center;
+      margin-bottom: 44px;
+    }
+    &__form {
+      display: flex;
+      flex-direction: column;
+    }
+    &__input, &__textarea_problem {
+      padding: 16px 21px 17px;
+      margin-bottom: 34px;
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.03em;
+      background-color: $black;
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      &::placeholder {
+        color: #ffffff;
+      }
+      &:focus {
+        outline: none;
+        border-color: $accent;
+      }
+    }
+    &__textarea_problem {
+      min-height: 370px;
+    }
+    &__btn {
+      padding: 19px 45px 18px;
+      font-family: 'Geometria', Arial, sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 14px;
+      line-height: 18px;
+      background-color: $accent;
+      box-shadow: 0 3px 3px rgba(96, 245, 255, 0.25);
+      border-radius: 32.5px;
+      color: $black;
+      align-self: center;
+    }
+  }
+}
+
+/*------------*/
+
+/*---568px---*/
+
+@media (min-width: 568px) {
+  .contact {
+    &__textarea_problem {
+      min-height: 200px;
+    }
+  }
+}
+
+/*------------*/
+
+/*---768px---*/
+
+@media (min-width: 768px) {
+  .contact {
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__input, &__textarea_problem {
+      width: 670px;
+    }
+  }
+}
+
+/*------------*/
+
+/*---910px---*/
+
+@media (min-width: 910px) {
+  .contact {
+    &__inner {
+      padding: 60px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__title {
+      margin-bottom: 64px;
+    }
+  }
+}
+
+/*------------*/
