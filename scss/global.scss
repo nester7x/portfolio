@@ -58,7 +58,7 @@ body {
     display: flex;
     align-items: center;
     &__item {
-      margin-right: 25px;
+      margin-right: 20px;
     }
     &__link {
       &:hover {
@@ -113,6 +113,11 @@ body {
   .title {
     font-size: 55px;
     line-height: 66px;
+  }
+  .soc_list {
+    &__item {
+      margin-right: 30px;
+    }
   }
 }
 

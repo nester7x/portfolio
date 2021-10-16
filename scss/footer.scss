@@ -1,0 +1,22 @@
+/*---320px---*/
+
+@media (min-width: 320px) {
+  .footer {
+    &__inner {
+      padding: 34px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__to_top_btn {
+      font-family: 'Geometria', Arial, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 23px;
+      color: #ffffff;
+    }
+  }
+}
+
+/*------------*/
