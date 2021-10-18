@@ -15,6 +15,28 @@
       font-size: 18px;
       line-height: 23px;
       color: #ffffff;
+      position: relative;
+      &:hover {
+        color: $accent;
+      }
+      &:before, &:after {
+        position: absolute;
+        content: '';
+      }
+      &:after {
+        right: -7px;
+        top: 0;
+        width: 1px;
+        height: 90%;
+        background-color: #ffffff;
+      }
+      &:before {
+        right: -10px;
+        top: -2px;
+        border-left: 3.5px solid transparent;
+        border-right: 3.5px solid transparent;
+        border-bottom: 7px solid #ffffff;
+      }
     }
   }
 }

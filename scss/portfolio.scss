@@ -79,6 +79,10 @@
         }
       }
     }
+    &__project_link {
+      height: 100%;
+      cursor: pointer;
+    }
     &__date {
       font-family: 'Geometria', Arial, sans-serif;
       font-weight: 500;
