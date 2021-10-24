@@ -145,12 +145,8 @@
     &__title {
       max-width: 500px;
     }
-    &__skills_list {
-      flex-wrap: nowrap;
-    }
     &__item {
-      width: 33%;
-      margin: 0 10px;
+      margin: 0 10px 10px;
     }
     &__line {
       color: #ffffff;
@@ -173,4 +169,14 @@
 
 /*------------*/
 
-/*----------------------*/
+/*---1200px---*/
+
+@media (min-width: 1200px) {
+  .about {
+    &__item {
+      width: 30%;
+    }
+  }
+}
+
+/*------------*/

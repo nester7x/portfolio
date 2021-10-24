@@ -69,6 +69,49 @@ body {
       }
     }
   }
+  .send-form {
+    z-index: 100;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background-color: #60F5FF;
+    box-shadow: 0px 0px 0px 0.5px #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    line-height: 13px;
+    color: #060606;
+    font-weight: 700;
+    border-radius: 5px;
+    opacity: 0;
+  }
+  .send-form-appear {
+    animation: send-form-appear 3s forwards;
+  }
+  .hidden {
+    display: none;
+  }
+  @keyframes send-form-appear {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0);
+    }
+    20% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 }
 
 /*------------*/
@@ -98,7 +141,12 @@ body {
 /*---568px---*/
 
 @media (min-width: 568px) {
-
+  .send-form {
+    width: 300px;
+    height: 250px;
+    font-size: 15px;
+    line-height: 15px;
+  }
 }
 
 /*------------*/

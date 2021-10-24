@@ -148,10 +148,10 @@
 
               <p>
                 I have a good knowledge of HTML/CSS developing(PSDtoHTML),
-                experience with cross-browser / adaptive layout and SVG / CSS -animations,
+                experience with cross-browser / adaptive layout and SVG / CSS -animations, mobile first method,
                 basic knowledge of JavaScript and JQuery,
                 pre-intermediate English. I have experience with SCSS preprocessor,
-                BEM methodology, GULP, Git/GitHub, Figma.
+                BEM methodology, GULP, Git/GitHub, Figma, Bootstrap.
               </p>
 
               <p>
@@ -281,27 +281,90 @@
                 <p class="about__item_text">HTML</p>
                 <div class="about__item_content">
                   <div class="about__line_wrapper">
-                    <div class="about__line" style="width: 70%"></div>
+                    <div class="about__line" style="width: 90%"></div>
+                  </div>
+                  <div class="about__num">90%</div>
+                </div>
+              </li>
+              <li class="about__item">
+                <p class="about__item_text">CSS / SCSS</p>
+                <div class="about__item_content">
+                  <div class="about__line_wrapper">
+                    <div class="about__line" style="width: 80%"></div>
                   </div>
                   <div class="about__num">80%</div>
                 </div>
               </li>
               <li class="about__item">
-                <p class="about__item_text">CSS</p>
+                <p class="about__item_text">JavaScript / JQuery</p>
                 <div class="about__item_content">
                   <div class="about__line_wrapper">
-                    <div class="about__line" style="width: 60%"></div>
+                    <div class="about__line" style="width: 20%"></div>
                   </div>
-                  <div class="about__num">70%</div>
+                  <div class="about__num">20%</div>
                 </div>
               </li>
               <li class="about__item">
-                <p class="about__item_text">JavaScript</p>
+                <p class="about__item_text">English</p>
+                <div class="about__item_content">
+                  <div class="about__line_wrapper">
+                    <div class="about__line" style="width: 40%"></div>
+                  </div>
+                  <div class="about__num">40%</div>
+                </div>
+              </li>
+              <li class="about__item">
+                <p class="about__item_text">Mobile first</p>
+                <div class="about__item_content">
+                  <div class="about__line_wrapper">
+                    <div class="about__line" style="width: 55%"></div>
+                  </div>
+                  <div class="about__num">55%</div>
+                </div>
+              </li>
+              <li class="about__item">
+                <p class="about__item_text">BEM</p>
+                <div class="about__item_content">
+                  <div class="about__line_wrapper">
+                    <div class="about__line" style="width: 75%"></div>
+                  </div>
+                  <div class="about__num">75%</div>
+                </div>
+              </li>
+              <li class="about__item">
+                <p class="about__item_text">GULP</p>
+                <div class="about__item_content">
+                  <div class="about__line_wrapper">
+                    <div class="about__line" style="width: 20%"></div>
+                  </div>
+                  <div class="about__num">20%</div>
+                </div>
+              </li>
+              <li class="about__item">
+                <p class="about__item_text">Git / GitHub</p>
+                <div class="about__item_content">
+                  <div class="about__line_wrapper">
+                    <div class="about__line" style="width: 35%"></div>
+                  </div>
+                  <div class="about__num">35%</div>
+                </div>
+              </li>
+              <li class="about__item">
+                <p class="about__item_text">Bootstrap</p>
                 <div class="about__item_content">
                   <div class="about__line_wrapper">
                     <div class="about__line" style="width: 10%"></div>
                   </div>
                   <div class="about__num">10%</div>
+                </div>
+              </li>
+              <li class="about__item">
+                <p class="about__item_text">Figma</p>
+                <div class="about__item_content">
+                  <div class="about__line_wrapper">
+                    <div class="about__line" style="width: 60%"></div>
+                  </div>
+                  <div class="about__num">60%</div>
                 </div>
               </li>
             </ul>
@@ -321,17 +384,21 @@
 
           <form class="contact__form" method="get">
 
+            <div class="send-form hidden">
+              Thanks for your message!
+            </div>
+
             <!-- Hidden Required Fields -->
             <input type="hidden" name="project_name" value="Site Name">
             <input type="hidden" name="admin_email" value="nester.letopisets@gmail.com">
             <input type="hidden" name="form_subject" value="Form Subject">
             <!-- END Hidden Required Fields -->
 
-            <input class="contact__input" name="name" type="text" placeholder="Your name">
+            <input class="contact__input send-form-input" name="name" type="text" placeholder="Your name">
 
-            <input class="contact__input" name="e-mail" type="text" placeholder="Email or phone number">
+            <input class="contact__input send-form-input" name="e-mail" type="text" placeholder="Email or phone number">
 
-            <textarea class="contact__textarea_problem" name="message" placeholder="Leave a comment"></textarea>
+            <textarea class="contact__textarea_problem send-form-input" name="message" placeholder="Leave a comment"></textarea>
 
             <button class="btn contact__btn" type="submit">Send message</button>
 
@@ -465,7 +532,6 @@
 </div>
 
 
-<script src="js/sending-form.js"></script>
 <script src="js/main.min.js"></script>
 </body>
 </html>

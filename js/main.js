@@ -22,4 +22,36 @@ $(function () {
 
     /*---------*/
 
+    /*E-mail Ajax Send*/
+
+    const sendForm = document.querySelector('.send-form')
+    const sendFormInput = document.querySelectorAll('.send-form-input')
+    const contactBtn = document.querySelector('.contact__btn')
+
+    sendFormInput.forEach(function (item) {
+        item.addEventListener('click', function () {
+            sendForm.classList.add('hidden');
+            sendForm.classList.remove('send-form-appear');
+        })
+    })
+
+    $("form").submit(function() { //Change
+        let th = $(this);
+        $.ajax({
+            type: "POST",
+            url: "mail.php", //Change
+            data: th.serialize()
+        }).done(function() {
+            sendForm.classList.remove('hidden');
+            sendForm.classList.add('send-form-appear');
+            setTimeout(function() {
+                // Done Functions
+                th.trigger("reset");
+            }, 1000);
+        });
+        return false;
+    });
+
+    /*--------------*/
+
 })
