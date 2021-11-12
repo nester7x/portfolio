@@ -30,7 +30,9 @@
     }
     &__info {
       display: none;
-      animation: .4s portfolio_info_anim;
+      align-self: flex-start;
+      animation: .4s portfolio_info_anim forwards;
+      z-index: 20;
     }
     @keyframes portfolio_info_anim {
       from {
@@ -50,9 +52,26 @@
       min-height: 200px;
       background-size: cover;
       box-shadow: 0 0 .5px 0 #ffffff;
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        background: rgba(255,255,255,0.3);
+        transition: 0.4s;
+      }
+      &:hover:before {
+        opacity: 1;
+      }
       &:hover {
         .portfolio__info {
           display: block;
+        }
+        .portfolio__date, .portfolio__subtitle, .portfolio__code_link {
+          color: $black;
         }
       }
       &:nth-child(1) {
@@ -71,17 +90,15 @@
         background: url("../images/Vivan.jpg");
         background-size: cover;
       }
-      &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4) {
-        &:hover {
-          .portfolio__date, .portfolio__subtitle, .portfolio__code_link {
-            color: #4f7e7e;
-          }
-        }
-      }
     }
     &__project_link {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
       height: 100%;
       cursor: pointer;
+      z-index: 10;
     }
     &__date {
       font-family: 'Geometria', Arial, sans-serif;
@@ -100,9 +117,8 @@
       color: #ffffff;
     }
     &__code_link {
-      display: inline-block;
       &:hover {
-        border-bottom: 1px solid #4f7e7e;
+        border-bottom: 1px solid $black;
         opacity: 0.8;
       }
     }
